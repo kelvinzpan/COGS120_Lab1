@@ -1,34 +1,34 @@
-/* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
-}
-
-/* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
-	color: #CC00AA;
-}
-
-/* this style exists to make it obvious that you've successfully linked
-   the CSS to the page. feel free to remove it once the link is working. */
 body {
-     border: 1px dotted gray;
-     padding: 20px;
+     padding-top: 70px;
 }
 
-.jumbotron {
-	position: relative;
-	background: none;
+.navbar {
+     -webkit-transition: all 0.6s ease-out;
+     -moz-transition: all 0.6s ease-out;
+     -o-transition: all 0.6s ease-out;
+     -ms-transition: all 0.6s ease-out;
+     transition: all 0.6s ease-out;
+
+     background: rgba(255, 255, 255, 0);
+
+     border: 0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
 }
 
-.jumbotron:after {
-     content:"";
-     background: url("http://lorempixel.com/1140/283");
-     opacity: 0.2;
-     top: 0;
-     left: 0;
-     bottom: 0;
-     right: 0;
-     position: absolute;
-     z-index: -1;
+.navbar-collapse {
+     border: 0;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+@media only screen and (max-width: 768px) {
+     .navbar-default .navbar-collapse {
+          background: rgb(25, 25, 25);
+          color: rgb(255, 255, 255);
+     } 
+}
+
+.navbar.scrolled {
+     background: rgb(25, 25, 25);
+     color: rgb(255, 255, 255);
 }
