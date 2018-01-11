@@ -59,8 +59,21 @@ h4 {
 @media only screen and (max-width: 768px) {
      .navbar-default .navbar-collapse {
           background: rgb(25, 25, 25);
+     }
+     .navbar-default .navbar-nav>li>a {
           color: rgb(230, 230, 230);
-     } 
+     }
+}
+
+.navbar-default .navbar-toggle{
+     border: 0;
+     outline: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+     background: rgb(25, 25, 25);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+     background: none;
 }
 
 /* Scrolled navbar changes */
@@ -84,4 +97,7 @@ h4 {
 }
 .navbar-default.scrolled .navbar-nav>li>a:focus {
      color: rgb(255, 200, 200);
+}
+.navbar-default.scrolled .navbar-toggle .icon-bar {
+     background: rgb(255, 200, 200);
 }
